@@ -66,6 +66,7 @@ flutter:
      - assets/icons/comment-solid-full.svg
      - assets/icons/fire-flame-curved-solid-full.svg
      - assets/icons/gear-solid-full.svg
+     - assets/icons/heart-solid-full.svg
      - assets/icons/house-solid-full.svg
      - assets/icons/user-solid-full.svg
   #   - images/a_dot_ham.jpeg

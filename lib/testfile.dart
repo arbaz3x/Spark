@@ -60,7 +60,7 @@ class CardExample extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(
-            height: 50,
+            height: 30,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -81,7 +81,7 @@ class CardExample extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 50,
+            height: 30,
           ),
           Row(
             children: [
@@ -137,18 +137,120 @@ class CardExample extends StatelessWidget {
               ) ,
             ],
           ),
+          SizedBox(
+            height: 40,
+          ),
+          Row(
+            children: [
+              SvgPicture.asset(
+                'assets/icons/heart-solid-full.svg',
+                height: 40,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Text('Your Matches',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w700
+                ),
+
+              ),
+              SizedBox(
+                width: 120,
+              ),
+              Text('See All',
+                style: TextStyle(
+                  color: Colors.red,
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold
+                ),
+
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Column(
+            children: [
+              SizedBox(
+                height: 100,
+                width: 420,
+                child:Card(
+                  color: Colors.grey[50],
+                  elevation: 20,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10), // Makes it a perfect rectangle
+                  ),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 10,
+                      ),
+                      CircleAvatar(
+                        radius: 35,
+                        backgroundColor: Colors.lightGreenAccent,
+                        child: Text('B'),
+                      )
+
+                    ],
+                  )
+                ),
+              ) ,
+              SizedBox(
+                height: 100,
+                width: 420,
+                child:Card(
+                  color: Colors.grey[50],
+                  elevation: 20,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10), // Makes it a perfect rectangle
+                  ),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 10,
+                      ),
+                      CircleAvatar(
+                        radius: 35,
+                        backgroundColor: Colors.purpleAccent,
+                        child: Text('A'),
+                      )
+
+                    ],
+                  )
+
+                ),
+              ) ,
+              SizedBox(
+                height: 100,
+                width: 420,
+                child:Card(
+                  color: Colors.grey[50],
+                  elevation: 20,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10), // Makes it a perfect rectangle
+                  ),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 10,
+                      ),
+                      CircleAvatar(
+                        radius: 35,
+                        backgroundColor: Colors.blue,
+                        child: Text('A'),
+                      )
+
+                    ],
+                  )
+                ),
+              ) ,
+            ],
+          )
         ],
       )
-
-
-
-
-
-
-
-
-
-
     );
   }
 }
